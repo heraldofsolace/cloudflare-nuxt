@@ -7,5 +7,9 @@ export default defineNuxtConfig({
     preset: "cloudflare-pages"
   },
 
-  modules: ["nitro-cloudflare-dev"]
+  modules: ["nitro-cloudflare-dev", "@nuxtjs/sanity"],
+  sanity: {
+    projectId: 'cy62a2st',
+    dataset: 'production',
+  }
 })
